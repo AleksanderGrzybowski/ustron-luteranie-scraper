@@ -1,0 +1,21 @@
+group 'pl.kelog'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+mainClassName = 'pl.kelog.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.7.2'
+
+}
